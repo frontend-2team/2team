@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Noto+Sans+KR:wght@100;300;400&family=Roboto:wght@100;300&display=swap");
+* {
+  font-family: "Noto Sans KR";
+  font-weight: 200;
+  background-color: black;
+  color: #fff;
+}
+/*상세페이지 CSS*/
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.grid {
+  display: grid;
+}
+
+.grey {
+  background-color: #4d4a4a;
+}
+/*트레일러*/
+
+#chihiro {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.trailer {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.x_button {
+  width: 40px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.trailer_inside {
+  top: 40%;
+  width: 100%;
+  height: 60%;
+  z-index: 1;
+}
+
+.title {
+  height: 100%;
+  background-color: transparent;
+}
+.title::before {
+  content: "";
+  background: linear-gradient(to bottom, transparent, black);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.movie1 {
+  display: inline-block;
+  width: 50%;
+  left: 5%;
+}
+
+.buttons {
+  height: 15%;
+  width: 90%;
+  top: 65%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+.button {
+  border-style: none;
+}
+
+.play {
+  width: 100px;
+  height: 40px;
+  border-style: none;
+  background-color: white;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+/*영화 정보*/
+.info {
+  margin: 0 50px;
+  top: 35%;
+  font-size: 0.9rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+/*함께 시청된 컨텐츠*/
+.watched_with {
+  width: 100%;
+  height: 30%;
+  top: 50%;
+  margin: 0 50px;
+}
+
+#h2 {
+  left: 0;
+  top: 0;
+}
+
+.movies_watched_with {
+  width: 100%;
+  height: 100%;
+  top: 20%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 2fr);
+  gap: 10px;
+}
+
+/*모달창 구현*/
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main > button > img {
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+main > div > img {
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+#modal {
+  overflow-y: auto;
+}
+
+#modal.modal-overlay {
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.65);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+#modal .modal-window {
+  background: #000000;
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 800px;
+  height: 80%;
+  position: relative;
+  padding: 0;
+}
+
+#modal .close-area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+#modal .content {
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+#btn-modal {
+  border-style: none;
+  cursor: pointer;
+  width: 90%;
+  height: 30%;
+}
+
+#btn-modal > img {
+  border-radius: 20px;
+}

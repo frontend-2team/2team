@@ -1,0 +1,55 @@
+* {
+  background-color: black;
+  color: #fff;
+}
+header {
+  box-shadow: 0 19px 38px rgba(246, 242, 242, 0.816), 0 15px 12px #efe9e9cd;
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  display: flex;
+}
+header > div > a {
+  padding: 10px;
+  text-decoration: none;
+}
+header > div > a:first-child {
+  font-weight: bolder;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+
+#exam {
+  position: absolute;
+  left: 60%;
+}
+
+header > div:hover {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  left: 350px;
+  padding: 10px;
+}
+/*페어 1팀 유동적으로 길이 수정*/
+main {
+  height: 200vh;
+}
+footer {
+  height: 60vh;
+  padding: 100px 0 0 300px;
+}
+footer > div > a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding-right: 40px;
+}

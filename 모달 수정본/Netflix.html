@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./퍼블리싱 프로젝트.CSS" />
+    <link rel="stylesheet" href="./상세페이지.CSS" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div><img src="./img/Logo.img.png" width="92.5px" height="40px" /></div>
+      <div>
+        <a href="#">홈</a>
+        <a href="#">시리즈</a>
+        <a href="#">영화</a>
+        <a href="#">NEW!요즘 대세 콘텐츠</a>
+        <a href="#">내가 찜한 콘텐츠</a>
+        <a href="#">언어별로 찾아보기</a>
+      </div>
+      <div id="exam">
+        <div class="container"><img src="./img/search.PNG" width="60px" height="60px" /></div>
+        <div class="container"><img src="./img/알림.PNG" /></div>
+        <div class="container">
+          <img src="./img/프로필.img.png" width="40px" height="40px" style="border-radius: 8px" />
+        </div>
+        <select class="container">
+          <option value=""></option>
+          <option value="아빠">아빠</option>
+          <option value="엄마">엄마</option>
+          <option value="동생">동생</option>
+          <option value="친구">친구</option>
+          <option value="프로필관리">프로필관리</option>
+          <option value="프로필이전">프로필이전</option>
+          <option value="계정">계정</option>
+          <option value="고객센터">고객센터</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div id="contain">
+        <button id="btn-modal">
+          <img src="./img/라라랜드.jpg" alt="" style="width: 70%" height="30%" />
+        </button>
+      </div>
+      <!--모달창 뒷 배경-->
+      <div id="modal" class="modal-overlay">
+        <!--모달창 메인-->
+        <div class="modal-window">
+          <!--모달창 내부 컨텐츠-->
+          <div class="content">
+            <!--비디오 넣을 예정(처음엔 이미지 일정시간 이후 비디오 재생)-->
+            <div class="trailer relative">
+              <video
+                id="chihiro"
+                poster="./img/치히로상_모달창_포스터.jpeg"
+                controls
+                autoplay
+                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              ></video>
+              <script>
+                document.getElementById("chihiro").muted = true; // 소리 끄기
+                // document.getElementById("chihiro").muted = false; // 소리 켜기
+              </script>
+              <!-- <img id="chihiro" src="./img/치히로상.webp" /> -->
+              <img class="x_button absolute transparent" src="./img/x_button.png" />
+              <div class="trailer_inside absolute transparent">
+                <div class="title relative">
+                  <img class="movie1 transparent absolute" src="./img/movie_title.webp" />
+                  <div class="buttons absolute flex transparent">
+                    <div class="flex transparent">
+                      <button class="play button transparent">▶ 재생</button>
+                      <button class="add button transparent">
+                        <img class="transparent" style="width: 40px" src="./img/add_button.png" alt="" />
+                      </button>
+                      <button class="recommend button transparent">
+                        <img class="transparent" style="width: 40px" src="./img/thums_up_button.png" />
+                      </button>
+                    </div>
+                    <button class="mute button transparent">
+                      <img class="transparent" style="width: 40px" src="./img/muted.png" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 영화 정보 -->
+            <div class="info grid absolute transparent">
+              <div class="transparent relative">
+                <div class="flex transparent">
+                  <div class="transparent">2023년 2시간 11분</div>
+                  <img class="transparent" style="width: 100px" src="./img/HD_공간음향_아이콘.png" /><br />
+                </div>
+                <div style="top: 25%" class="transparent absolute">
+                  <img style="width: 30px" src="./img/15세이상.svg" />
+                  <img style="width: 30px" src="./img/선정성.svg" />
+                </div>
+
+                <br />
+                <div class="transparent absolute" style="text-align: left; top: 65%">
+                  자신의 과거를 숨기지 않는 전직 성 노동자. 작은 해변가 마을의 도시락 가게에서 일을 시작한다.<br />인연이
+                  스치는 외로운 영혼들에게 마음의 위안을 주며.
+                </div>
+              </div>
+              <div class="transparent" style="text-align: left">
+                <div class="transparent">
+                  <span class="transparent" style="color: rgb(150, 135, 135)">출연 :</span> 아리무라 카스미, 토요시마
+                  하나, 시미다 뎃타, 더 보기
+                </div>
+                <br />
+                <div class="transparent">
+                  <span class="transparent" style="color: rgb(150, 135, 135)">장르 :</span> 일본작품, 드라마 장르
+                </div>
+                <div>
+                  <br />
+                  <span class="transparent" style="color: rgb(150, 135, 135)">영화 특징:</span> 잔잔한, 거부할 수 없는
+                  이끌림, 달콤 쌉싸름
+                </div>
+              </div>
+            </div>
+            <!--함께 시청된 컨텐츠-->
+            <div class="watched_with absolute transparent">
+              <div style="width: 100%; height: 100%" class="relative">
+                <h2 class="absolute">함께 시청된 컨텐츠</h2>
+                <div class="movies_watched_with grid absolute">
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                  <div class="movie grey"></div>
+                </div>
+              </div>
+            </div>
+            <div class="others"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        /* 동영상관련 싹 다 넣기 */
+        const modal = document.getElementById("modal");
+
+        function modalOn() {
+          modal.style.display = "flex";
+        }
+
+        function isModalOn() {
+          return modal.style.display === "flex";
+        }
+        function modalOff() {
+          modal.style.display = "none";
+        }
+        const btnModal = document.getElementById("btn-modal");
+        btnModal.addEventListener("click", (e) => {
+          modalOn();
+        });
+
+        const closeBtn = modal.querySelector(".x_button");
+        closeBtn.addEventListener("click", (e) => {
+          modalOff();
+          chihiro.remove();
+        });
+
+        modal.addEventListener("click", (e) => {
+          const evTarget = e.target;
+          if (evTarget.classList.contains("modal-overlay")) {
+            modalOff();
+          }
+        });
+        window.addEventListener("keyup", (e) => {
+          if (isModalOn() && e.key === "Escape") {
+            modalOff();
+          }
+        });
+      </script>
+      <div>
+        <img src="./img/라라랜드.jpg" alt="" width="30%" height="30%" />
+      </div>
+      <div>
+        <img src="./img/라라랜드.jpg" alt="" width="30%" height="30%" />
+      </div>
+      <div>
+        <img src="./img/라라랜드.jpg" alt="" width="30%" height="30%" />
+      </div>
+    </main>
+
+    <hr />
+    <footer>
+      <div>
+        <a href="https://www.facebook.com/NetflixKR"><img src="./img/facebook.png" /></a>
+        <a href="https://www.instagram.com/netflixkr/"><img src="./img/instar.png" /></a>
+        <a href="https://twitter.com/netflixkr"><img src="./img/twitter.png" /></a>
+        <a href="https://www.youtube.com/channel/UCiEEF51uRAeZeCo8CJFhGWw/featured"><img src="./img/youtube.png" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
