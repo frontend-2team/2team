@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./퍼블리싱 프로젝트.CSS" />
+    <link rel="stylesheet" href="./상세페이지.CSS" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div><img src="./img/Logo.img.png" width="92.5px" height="40px" /></div>
+      <div>
+        <a href="#">홈</a>
+        <a href="#">시리즈</a>
+        <a href="#">영화</a>
+        <a href="#">NEW!요즘 대세 콘텐츠</a>
+        <a href="#">내가 찜한 콘텐츠</a>
+        <a href="#">언어별로 찾아보기</a>
+      </div>
+      <div id="exam">
+        <div class="container"><img src="./img/search.PNG" width="60px" height="60px" /></div>
+        <div class="container"><img src="./img/알림.PNG" /></div>
+        <div class="container">
+          <img src="./img/프로필.img.png" width="40px" height="40px" style="border-radius: 8px" />
+        </div>
+        <select class="container">
+          <option value=""></option>
+          <option value="아빠">아빠</option>
+          <option value="엄마">엄마</option>
+          <option value="동생">동생</option>
+          <option value="친구">친구</option>
+          <option value="프로필관리">프로필관리</option>
+          <option value="프로필이전">프로필이전</option>
+          <option value="계정">계정</option>
+          <option value="고객센터">고객센터</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div id="contain">
+        <button id="btn-modal">
+          <img src="./img/라라랜드.jpg" alt="" style="width: 70%" height="30%" />
+        </button>
+      </div>
+      <!--모달창 뒷 배경-->
+      <div id="modal" class="modal-overlay">
+        <!--모달창 메인-->
+        <div class="modal-window relative">
+          <!--모달창 내부 컨텐츠-->
+          <div class="content">
+            <!--비디오 넣을 예정(처음엔 이미지 일정시간 이후 비디오 재생)-->
+            <div class="trailer relative">
+              <img id="포스터" src="./img/낮과밤 포스터.webp" />
+              <img class="x_button absolute transparent" src="./img/x_button.png" />
+              <div class="trailer_inside absolute transparent">
+                <div class="title relative">
+                  <img style="width: 40%" class="movie1 transparent absolute" src="./img/낮과밤로고.webp" />
+                  <div class="buttons absolute flex transparent">
+                    <div class="flex transparent">
+                      <button class="play button transparent">▶ 재생</button>
+                      <button class="add button transparent">
+                        <img class="transparent" style="width: 40px" src="./img/add_button.png" alt="" />
+                      </button>
+                      <button class="recommend button transparent">
+                        <img class="transparent" style="width: 40px" src="./img/thums_up_button.png" />
+                      </button>
+                    </div>
+                    <button class="mute button transparent">
+                      <img class="transparent" style="width: 40px" src="./img/muted.png" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--드라마 정보 -->
+            <div class="info grid absolute transparent">
+              <div class="transparent relative">
+                <div class="flex transparent">
+                  <div class="transparent">2020 에피소드 16개</div>
+                  <img class="transparent" style="width: 100px" src="./img/HD_공간음향_아이콘.png" /><br />
+                </div>
+                <div style="top: 25%" class="transparent absolute">
+                  <span class="maturity transparent">15+</span>
+                </div>
+
+                <br />
+                <div class="transparent absolute" style="text-align: left; top: 65%">
+                  예고장에 적힌 대로 살인이 발생한다! 계속 이어지는 현재의 예고 살인, 그리고 28년 전 한 마을에서 벌어진
+                  의문의 참사. 서울지방경찰청 특수팀이 두 사건을 잇는 어두운 비밀을 파헤친다.
+                </div>
+              </div>
+              <div class="transparent" style="text-align: left">
+                <div class="transparent">
+                  <span class="transparent" style="color: rgb(150, 135, 135)">출연 :</span>
+                  <span class="hover transparent">남궁민</span>, <span class="hover transparent">이청아</span>,
+                  <span class="hover transparent">김설현</span>, 더 보기
+                </div>
+                <br />
+                <div class="transparent">
+                  <span class="transparent" style="color: rgb(150, 135, 135)">장르 :</span> SF 시리즈, 액션 &amp;
+                  어드벤처 시리즈, 범죄 시리즈
+                </div>
+                <div class="transparent">
+                  <br />
+                  <span class="transparent" style="color: rgb(150, 135, 135)">영화 특징:</span> 어두운, 긴장감 넘치는
+                  이끌림, 달콤 쌉싸름
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--드라마 회차-->
+          <div class="episodes absolute transparent">
+            <div class="flex space_between transparent">
+              <p class="episode transparent">회차</p>
+              <p class="transparent">낮과 밤</p>
+            </div>
+            <div class="episode_colums flex transparent">
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">1</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤1화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">1화</p>
+                    <p class="transparent">63분</p>
+                  </div>
+                  <div class="transparent preview">
+                    예고장을 보내는 살인 사건이 또 일어난다. 익명의 제보를 통해 이번 희생자를 찾으러 수영장 파티에 간
+                    경찰. 도정우는 다음번 살인의 위치를 알아내려고 암호를 해석한다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">2</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤2화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">2화</p>
+                    <p class="transparent">65분</p>
+                  </div>
+                  <div class="transparent preview">
+                    수사팀에 합류한 FBI 출신 프로파일러 제이미. 정우의 파트너가 된 후 그의 말에서 수상한 점을 알아챈다.
+                    이지욱은 비밀리에 피해자를 뒤쫓아 영상을 찍고 특종감을 얻는다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">3</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤3화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">3화</p>
+                    <p class="transparent">67분</p>
+                  </div>
+                  <div class="transparent preview">
+                    정우를 의심하는 제이미와 달리, 그를 믿는 공혜원. 팀은 다음 표적인 손민호를 조사하면서 하얀밤 마을
+                    참사 사건을 다룬다. 민호는 이 마을의 생존자를 범인으로 보는데.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">4</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤4화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">4화</p>
+                    <p class="transparent">67분</p>
+                  </div>
+                  <div class="transparent preview">
+                    정우가 하얀밤 마을 출신임을 밝히자 제이미는 어두운 어린 시절에 대해 말한다. 민호의 집을 주시하는
+                    팀은 이곳의 방범 카메라 접속이 막혀 있자 이를 뚫기 위해 노력한다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">5</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤5화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">5화</p>
+                    <p class="transparent">68분</p>
+                  </div>
+                  <div class="transparent preview">
+                    처참한 저택에서 생존자를 찾은 혜원. 뉴스 매체는 현장에서 영웅적인 활약을 보인 경찰관을 대대적으로
+                    보도한다. 이를 통해 진범에 관한 핵심 단서를 모으게 된 제이미.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">6</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤6화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">6화</p>
+                    <p class="transparent">67분</p>
+                  </div>
+                  <div class="transparent preview">
+                    혜원은 숲속 살인 현장에서 범인을 체포하지만, 사건 소관이 검찰로 넘어가자 당황한다. 누가 자신에게
+                    수술해준 것인지 알아내려는 제이미는 의사를 찾아가 정보를 얻는다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">7</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤7화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">7화</p>
+                    <p class="transparent">60분</p>
+                  </div>
+                  <div class="transparent preview">
+                    병원에서 칼 든 괴한에게 공격받는 정우. 혜원과 함께 도망친 후 경찰청에 가게 된다. 지욱은 USB를
+                    우편으로 받는다. 이 드라이브에는 의문을 제기하는 영상이 담겨 있는데.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">8</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤8화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">8화</p>
+                    <p class="transparent">58분</p>
+                  </div>
+                  <div class="transparent preview">
+                    민호에게 자백을 강요하는 제이미. 지욱은 혜원에게 새로운 영상을 보여준다. 인체 실험이 끝나지 않았음을
+                    알게 된 정우는 백야재단의 각하와 연락할 방법을 찾으려고 한다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">9</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤9화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">9화</p>
+                    <p class="transparent">59분</p>
+                  </div>
+                  <div class="transparent preview">
+                    공일도의 사무실에서 정우는 자료를 살펴본 후 당사자에게 답을 요구한다. 한편 아빠가 민호와 함께 있는
+                    사진을 발견한 혜원. 이전 증거물에서 충격적인 영상을 보게 된다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">10</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤10화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">10화</p>
+                    <p class="transparent">58분</p>
+                  </div>
+                  <div class="transparent preview">
+                    범죄 현장에서 익숙한 얼굴을 보고 세 번째 생존자를 알아낸 제이미. 혜원은 아빠가 탄 차를 미행하고,
+                    정우는 애들이 탄 밴을 따라간다. 그런데 두 차량의 행선지가 같다?
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">11</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤11화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">11화</p>
+                    <p class="transparent">60분</p>
+                  </div>
+                  <div class="transparent preview">
+                    백현수의 죽음을 조사하는 정우는 오정환과의 연결 고리를 밝혀낸다. 과거와 현재의 실험에 대해 아빠에게
+                    직접 묻는 혜원. 제이미는 기억을 되찾으러 하얀밤 마을로 향한다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">12</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤12화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">12화</p>
+                    <p class="transparent">58분</p>
+                  </div>
+                  <div class="transparent preview">
+                    지욱이 새로운 살인 예고장을 보도한다. 한편 정우의 비밀 자료실에 접근하면서 그의 의도를 알게 된 혜원.
+                    하얀밤 마을에서는 28년 전 비극의 밤에 숨겨진 진실이 드러난다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">13</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤13화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">13화</p>
+                    <p class="transparent">59분</p>
+                  </div>
+                  <div class="transparent preview">
+                    마을에 관한 모든 기억을 되찾은 제이미는 오랫동안 잊고 살았던 쌍둥이 오빠를 다시 만난다. 정우는 비밀
+                    연구소로 안내해주면 아들을 돌려주겠다고 정환에게 전화한다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">14</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤14화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">14화</p>
+                    <p class="transparent">58분</p>
+                  </div>
+                  <div class="transparent preview">
+                    또 살인 예고장을 받은 지욱. 정환은 노화가 빨라져 우려를 표한다. 장용식은 재웅의 정체와 살인 계획에
+                    대해 누군가에게 알려주고, 정우는 비밀 연구소의 위치를 찾는다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">15</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤15화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">15화</p>
+                    <p class="transparent">60분</p>
+                  </div>
+                  <div class="transparent preview">
+                    민호에게 더 많은 실험체를 공급하도록 명령하는 정환. 혜원은 아빠를 설득하려 하지만, 통하지 않자
+                    정보를 알려준다. 덕분에 일도는 정우의 안경을 통해 공식을 완성한다.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+
+              <div class="episode_container flex transparent">
+                <div class="episode_num transparent">16</div>
+                <div class="transparent episode_thumb">
+                  <img style="width: 100%" src="./img/낮과밤16화.webp" />
+                </div>
+                <div class="episode_exp transparent">
+                  <div class="episode_info flex transparent">
+                    <p class="transparent">16화</p>
+                    <p class="transparent">69분</p>
+                  </div>
+                  <div class="transparent preview">
+                    약을 완성하려는 조현희. 실험을 마친 후, 정우의 피를 얻기 위해 제이미를 인질로 이용한다. 시한폭탄이
+                    설치된 연구소에서는 폭발 전에 모두가 탈출하는데. 두 명만 빼고.
+                  </div>
+                </div>
+              </div>
+              <hr class="transparent" />
+            </div>
+          </div>
+
+          <!--함께 시청된 컨텐츠-->
+          <div class="watched_with absolute transparent">
+            <div style="width: 90%; height: 100%; margin: 0" class="relative transparent">
+              <h2 class="absolute transparent">함께 시청된 컨텐츠</h2>
+              <div class="movies_watched_with grid absolute transparent">
+                <div class="movie grey 1">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/461개의 도시락.webp"
+                    />
+                    <span class="transparent absolute time">1시간 59분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img
+                        style="width: 30px; margin-left: 12px; margin-top: 12px"
+                        src="./img/전체관람가.svg"
+                      />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2020</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      이혼한 뮤지션 아빠. 노력하는 고등학생 아들을 위해 매일 도시락을 싸 주기로 한다. 그 대신 아들 역시
+                      학교를 하루도 결석하지 않기로 약속하고.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 2">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/심야식당.jpg"
+                    />
+                    <span class="transparent absolute time">시즌 2개</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img style="width: 30px; margin-left: 12px; margin-top: 12px" src="./img/15세이상.svg" />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2019</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      언뜻 보면 평범해 보이는 한 일본 식당의 단골손님들은 특정한 음식에 대한 공통의 애정을 바탕으로 서로
+                      간에 단순하지만 깊은 유대관계를 쌓아 나간다.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 3">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/눈물이주룩주룩.webp"
+                    />
+                    <span class="transparent absolute time">1시간 57분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img style="width: 30px; margin-left: 12px; margin-top: 12px" src="./img/12세이상.svg" />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2006</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p style="font-size: 0.7rem" class="transparent annotation absolute">
+                      피 한 방울 섞이지 않은 남매. 부모의 재혼으로 가족이 됐지만 오랜 시간 떨어져 살았다. 하지만
+                      여동생이 고교 입학을 위해 오빠네 집에 들어와 살면서, 둘만의 시간을 보내기 시작한다. 둘 다 하고
+                      싶은 말을 마음속으로만 삼키며.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 4">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/리틀포레스트2.webp"
+                    />
+                    <span class="transparent absolute time">1시간 51분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img style="width: 30px; margin-left: 12px; margin-top: 12px" src="./img/12세이상.svg" />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2014</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      대도시에서 성공을 좇아 달렸고, 이제는 고향 시골 마을로 돌아온 이치코. 자연의 흐름에 보다 순응하며
+                      활력을 되찾아간다.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 5">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/마이코네행복한밥상.jpg"
+                    />
+                    <span class="transparent absolute time">에피소드 9개</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img style="width: 30px; margin-left: 12px; margin-top: 12px" src="./img/12세이상.svg" />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2023</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      꿈을 좇아 마이코가 되기 위해 함께 교토에 온 두 친구. 떼려야 뗄 수 없는 단짝이지만, 한 지붕 아래
+                      살면서 서로 다른 길을 걷기 시작한다.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 6">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/카모메식당.webp"
+                    />
+                    <span class="transparent absolute time">1시간 41분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img
+                        style="width: 30px; margin-left: 12px; margin-top: 12px"
+                        src="./img/전체관람가.svg"
+                      />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2006</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p style="font-size: 0.7rem" class="transparent annotation absolute">
+                      헬싱키에 작은 일식당을 차린 일본인 여성. 파리만 날린 지 한 달, 우연히 만난 일본인 여행객을 데려와
+                      함께 운영하기 시작한다. 그리고 그때부터 손님들이 찾아오기 시작하고, 아담한 주방에서 짓는 따뜻한
+                      밥과 이야기가 모두를 기다린다.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 7">
+                  <div style="height: 40%" class="relative transparent">
+                    <img class="poster_watched_with" style="height: 100%; width: 100%" src="./img/악의꽃.webp" />
+                    <span class="transparent absolute time">에피소드 16개</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <span style="margin-left: 8px" class="maturity transparent">15+</span>
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2020</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p style="font-size: 0.75rem" class="transparent annotation absolute">
+                      14년을 사랑해 온 부부. 그런데 남편이 사실, 연쇄 살인마라면? 강력계 형사 아내 앞에서 완벽한 남편의
+                      모습을 연기해 낸 남자. 아내가 연쇄 살인 수사를 시작하자, 그의 진짜 모습도 드러날 위기에 처한다.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 8">
+                  <div style="height: 40%" class="relative transparent">
+                    <img class="poster_watched_with" style="height: 100%; width: 100%" src="./img/보이스.webp" />
+                    <span class="transparent absolute time">1시간 49분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img style="width: 30px; margin-left: 12px; margin-top: 12px" src="./img/15세이상.svg" />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2021</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      건설 현장에서 작업반장으로 일하는 전직 형사. 가족과 동료가 보이스 피싱을 당하자 배후 조직을
+                      추적한다. 그러나 곧 조직의 위험한 작전에 휘말리게 되는데.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 9">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/공조2 인터네셔날.webp"
+                    />
+                    <span class="transparent absolute time">2시간 8분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img style="width: 30px; margin-left: 12px; margin-top: 12px" src="./img/15세이상.svg" />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2022</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      서울에 마약 조직을 꾸린 흉악 범죄 두목을 체포하기 위한 공조 작전. 북한 형사와 남한 형사, 그리고
+                      FBI 요원이 손을 잡는다.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="movie grey 10">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/461개의 도시락.webp"
+                    />
+                    <span class="transparent absolute time">1시간 59분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img
+                        style="width: 30px; margin-left: 12px; margin-top: 12px"
+                        src="./img/전체관람가.svg"
+                      />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2020</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      이혼한 뮤지션 아빠. 노력하는 고등학생 아들을 위해 매일 도시락을 싸 주기로 한다. 그 대신 아들 역시
+                      학교를 하루도 결석하지 않기로 약속하고.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 11">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/461개의 도시락.webp"
+                    />
+                    <span class="transparent absolute time">1시간 59분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img
+                        style="width: 30px; margin-left: 12px; margin-top: 12px"
+                        src="./img/전체관람가.svg"
+                      />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2020</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      이혼한 뮤지션 아빠. 노력하는 고등학생 아들을 위해 매일 도시락을 싸 주기로 한다. 그 대신 아들 역시
+                      학교를 하루도 결석하지 않기로 약속하고.
+                    </p>
+                  </div>
+                </div>
+                <div class="movie grey 12">
+                  <div style="height: 40%" class="relative transparent">
+                    <img
+                      class="poster_watched_with"
+                      style="height: 100%; width: 100%"
+                      src="./img/461개의 도시락.webp"
+                    />
+                    <span class="transparent absolute time">1시간 59분</span>
+                  </div>
+                  <div style="height: 60%" class="transparent relative">
+                    <div class="transparent flex absolute age">
+                      <img
+                        style="width: 30px; margin-left: 12px; margin-top: 12px"
+                        src="./img/전체관람가.svg"
+                      />
+                      <p style="display: inline-block; font-weight: 400" class="transparent">&nbsp; 2020</p>
+                    </div>
+                    <img class="transparent absolute adding" style="width: 50px" src="./img/add_button.png" alt="" />
+                    <p class="transparent annotation absolute">
+                      이혼한 뮤지션 아빠. 노력하는 고등학생 아들을 위해 매일 도시락을 싸 주기로 한다. 그 대신 아들 역시
+                      학교를 하루도 결석하지 않기로 약속하고.
+                    </p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="others"></div>
+        </div>
+      </div>
+      <script>
+        const modal = document.getElementById("modal");
+        function modalOn() {
+          modal.style.display = "flex";
+        }
+        function isModalOn() {
+          return modal.style.display === "flex";
+        }
+        function modalOff() {
+          modal.style.display = "none";
+        }
+        const btnModal = document.getElementById("btn-modal");
+        btnModal.addEventListener("click", (e) => {
+          modalOn();
+        });
+        const closeBtn = modal.querySelector(".x_button");
+        closeBtn.addEventListener("click", (e) => {
+          modalOff();
+        });
+        modal.addEventListener("click", (e) => {
+          const evTarget = e.target;
+          if (evTarget.classList.contains("modal-overlay")) {
+            modalOff();
+          }
+        });
+        window.addEventListener("keyup", (e) => {
+          if (isModalOn() && e.key === "Escape") {
+            modalOff();
+          }
+        });
+      </script>
+      <div>
+        <img src="./img/라라랜드.jpg" alt="" width="30%" height="30%" />
+      </div>
+      <div>
+        <img src="./img/라라랜드.jpg" alt="" width="30%" height="30%" />
+      </div>
+      <div>
+        <img src="./img/라라랜드.jpg" alt="" width="30%" height="30%" />
+      </div>
+    </main>
+
+    <!-- <hr /> -->
+    <footer>
+      <div>
+        <a href="https://www.facebook.com/NetflixKR"><img src="./img/facebook.png" /></a>
+        <a href="https://www.instagram.com/netflixkr/"><img src="./img/instar.png" /></a>
+        <a href="https://twitter.com/netflixkr"><img src="./img/twitter.png" /></a>
+        <a href="https://www.youtube.com/channel/UCiEEF51uRAeZeCo8CJFhGWw/featured"><img src="./img/youtube.png" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
