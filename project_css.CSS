@@ -1,0 +1,141 @@
+
+* {
+    background-color: black;
+    color: #fff;
+}
+header {
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    display: flex;
+}
+header > div > a {
+    padding: 10px;
+    text-decoration: none;
+}
+header > div > a:first-child {
+    font-weight: bolder;
+}
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+header > div:hover {
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    left: 350px;
+    padding: 10px;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+main {
+    position: relative;
+    height: 200vh;
+}
+main > .main_contents{
+    position: absolute;
+    height: 100vh;
+    background-image: url('./img/main_img.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 200;
+}
+/*main > .main_contents > .main_text{
+    margin-left: 36px;
+    background-color: rgba(0, 0, 0, 0);
+}*/
+main > .main_contents > p{
+    margin-left: 36px;
+    margin-top: 720px;
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0);
+}
+main > .main_contents > .main_imgs{
+    margin-left: 36px;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0);
+}
+main > .main_contents > .main_imgs img:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.4);
+    
+
+}
+.inline_div{
+    position: relative;
+    display: inline;
+}
+.hidden_div{
+    display: inline;
+    opacity: 0;
+}
+.hidden_img:hover + .hidden_div{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 56px;
+    left: -67px;
+    width: 476px;
+    height: 200px;
+    background-color: black;
+    opacity: 1;
+    z-index: 100;
+}
+
+main > .main_sub_contents{
+    position: absolute;
+    top: 960px;
+    margin-left: 36px;
+    white-space: nowrap;
+    z-index: 100;
+}
+main > .main_sub_contents > p{
+    font-size: 28px;
+}
+main > .main_sub_contents > div img:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.4);
+    
+    
+}
+.inline_div2{
+    position: relative;
+    display: inline;
+}
+.hidden_div2{
+    display: inline;
+    opacity: 0;
+}
+.hidden_img2:hover + .hidden_div2{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 56px;
+    left: -67px;
+    width: 476px;
+    height: 200px;
+    background-color: black;
+    opacity: 1;
+    z-index: 100;
+}
+
+
+footer {
+    height: 60vh;
+    padding: 100px 0 0 300px;
+}
+footer > div > a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding-right: 40px;
+}
+
