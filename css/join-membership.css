@@ -223,9 +223,8 @@ header .right-items .login-btn {
     justify-content: space-between;
     padding: 24px;
     border: none;
-    background-color: rgb(19, 33, 68);
+    background-color: #132144;
     cursor: pointer;
-    appearance: none;
 }
 .frequentQ div:nth-of-type(2) ul li .question h3 {
     font-size: 1.5rem;
@@ -236,17 +235,17 @@ header .right-items .login-btn {
     width: 28px;
 }
 .frequentQ div:nth-of-type(2) ul li .question:hover {
-    background-color: rgb(34, 51, 98);
+    background-color: #223362;
 }
 
 .frequentQ div:nth-of-type(2) ul li .answer {
     display: none;
-    background-color: rgb(74, 90, 133);
+    background-color: #132144;
     height: fit-content;
     box-sizing: border-box;
     padding: 24px;
     margin-top: 2px;
-    transition: display ease-in-out .3s;
+    transition: display ease-in-out .6s;
     cursor: pointer;
 }
 .frequentQ div:nth-of-type(2) ul li .answer span {
