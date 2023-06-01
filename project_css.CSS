@@ -2,6 +2,7 @@
 * {
     background-color: black;
     color: #fff;
+    box-sizing: border-box;
 }
 header {
     height: 10vh;
@@ -122,10 +123,33 @@ main > .main_sub_contents > div img:hover{
     left: -67px;
     width: 476px;
     height: 200px;
-    background-color: black;
+    background-color: red;
     opacity: 1;
     z-index: 100;
 }
+/*수정 중..*/
+.sort_div2{
+    position: absolute;
+    opacity: 0;
+} 
+
+.hidden_img2:hover + .hidden_div2 > *{
+    transition: all 0.3s ease-in-out;
+    /*position: absolute;
+    z-index: 200;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    opacity: 1;
+}
+/* .hidden_img2:hover + .hidden_div2 > .sort_div2 > .left_sort_icon2 > img{
+    position: absolute;
+    z-index: 300;
+    top: 0 ;
+} */
+
+/*수정 중..*/
 
 
 footer {
