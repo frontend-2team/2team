@@ -67,7 +67,7 @@ main > .main_contents > .main_imgs{
     background-color: rgba(0, 0, 0, 0);
 }
 main > .main_contents > .main_imgs img:hover{
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out 1s;
     transform: scale(1.4);
     /* position: absolute;
     z-index: 100; */
@@ -81,7 +81,19 @@ main > .main_contents > .main_imgs img:hover{
     opacity: 0;
 }
 .hidden_img:hover + .hidden_div{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 1s;
+    position: absolute;
+    top: 56px;
+    left: -67px;
+    width: 476px;
+    height: 200px;
+    background-color: black;
+    opacity: 1;
+    z-index: 100;
+}
+/* hidden_img클래스 hover 후 hidden_div클래스 hover 유지하기*/
+.hidden_div:hover{
+    transition: all 0.3s ease-in-out 1s;
     position: absolute;
     top: 56px;
     left: -67px;
@@ -103,7 +115,7 @@ main > .main_sub_contents > p{
     font-size: 28px;
 }
 main > .main_sub_contents > div img:hover{
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out 1s;
     transform: scale(1.4);
     /* position: absolute;
     z-index: 100; */
@@ -116,8 +128,9 @@ main > .main_sub_contents > div img:hover{
     display: inline;
     opacity: 0;
 }
+
 .hidden_img2:hover + .hidden_div2{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 1s;
     position: absolute;
     top: 56px;
     left: -67px;
@@ -127,6 +140,19 @@ main > .main_sub_contents > div img:hover{
     opacity: 1;
     z-index: 100;
 }
+/* hidden_img2클래스 hover 후 hidden_div2클래스 hover 유지하기*/
+.hidden_div2:hover{
+    transition: all 0.3s ease-in-out 1s;
+    position: absolute;
+    top: 56px;
+    left: -67px;
+    width: 476px;
+    height: 200px;
+    background-color: red;
+    opacity: 1;
+    z-index: 100;
+}
+
 /*수정 중..*/
 .sort_div2{
     position: absolute;
@@ -134,7 +160,7 @@ main > .main_sub_contents > div img:hover{
 } 
 
 .hidden_img2:hover + .hidden_div2 > *{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 1s;
     /*position: absolute;
     z-index: 200;*/
     display: flex;
