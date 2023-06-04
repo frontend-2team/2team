@@ -42,7 +42,7 @@ header > div:hover {
 }
 /*페어 1팀 유동적으로 길이 수정*/
 main {
-  height: 300vh;
+  height: 400vh;
 }
 footer {
   height: 60vh;
