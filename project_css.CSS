@@ -1,6 +1,6 @@
 
 * {
-    background-color: black;
+    background-color: white;
     color: #fff;
     box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ main > .main_contents > .main_imgs img:hover{
     left: -67px;
     width: 476px;
     height: 200px;
-    background-color: black;
+    /*background-color: black;*/
     opacity: 1;
     z-index: 100;
 }
@@ -99,7 +99,7 @@ main > .main_contents > .main_imgs img:hover{
     left: -67px;
     width: 476px;
     height: 200px;
-    background-color: black;
+    /*background-color: black;*/
     opacity: 1;
     z-index: 100;
 }
@@ -136,7 +136,7 @@ main > .main_sub_contents > div img:hover{
     left: -67px;
     width: 476px;
     height: 200px;
-    background-color: red;
+    /*background-color: red;*/
     opacity: 1;
     z-index: 100;
 }
@@ -148,33 +148,47 @@ main > .main_sub_contents > div img:hover{
     left: -67px;
     width: 476px;
     height: 200px;
-    background-color: red;
+    /*background-color: red;*/
     opacity: 1;
     z-index: 100;
 }
 
 /*수정 중..*/
-.sort_div2{
+/* .sort_div2{
     position: absolute;
     opacity: 0;
-} 
-
-.hidden_img2:hover + .hidden_div2 > *{
+} */
+/* .hidden_img2:hover + .hidden_div2 > *{
     transition: all 0.3s ease-in-out 1s;
-    /*position: absolute;
-    z-index: 200;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
     opacity: 1;
-}
-/* .hidden_img2:hover + .hidden_div2 > .sort_div2 > .left_sort_icon2 > img{
+} */
+/* .hidden_img2:hover + .hidden_div2 > .sort_div2 > .left_sort_icon2 > p{
     position: absolute;
     z-index: 300;
     top: 0 ;
+    opacity: 1;
 } */
-
+/* .main > .main_sub_contents > div .sort_div2 p {
+    position: absolute;
+    top: 0;
+    z-index: 3000;
+    opacity: 1;
+} */
+.hidden_icon2{
+    position: absolute;
+    /* opacity: 0; */
+}
+.hidden_img2:hover + .hidden_div2 + .hidden_icon2{
+    transition: all 0.2s ease-in-out 1s;
+    /* position: absolute;
+    top: 80px;
+    left: -20px;
+    z-index: 300; */
+    /* opacity: 1; */
+}
 /*수정 중..*/
 
 
