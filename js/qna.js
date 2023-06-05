@@ -28,6 +28,9 @@ function shortAnswer01(){
 
     if(answer01.style.display === 'none'){
         answer01.style.display = 'block';
+        answer01.style.transitionProperty = 'display';
+        answer01.style.transitionDuration = '.6s';
+        answer01.style.transitionTimingFunction = 'ease-in';
         form.style.marginTop = '11%';
         plus01.style.transform = 'rotate(45deg)';
     } else {
